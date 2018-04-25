@@ -1,6 +1,6 @@
 {
   "name": "babylon-explorer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Babylon runtime (_r) explorer",
   "main": "index.js",
   "repository": "https://github.com/axeon-software/babylon-explorer",
