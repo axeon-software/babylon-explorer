@@ -6,7 +6,7 @@
 </head>
 
 <body>
-This is the new version 0.0.2.
+Auto update on restart ?
 <script>
     const ipcRenderer = require('electron').ipcRenderer;
     // wait for an updateReady message
@@ -16,7 +16,7 @@ This is the new version 0.0.2.
         container.innerHTML = "new version ready!";
     })
 </script>
-Version: <span id="version">v0.0.2</span>
+Version: <span id="version">v0.0.3</span>
 <!-- the button onClick sends a quitAndInstall message to the electron main process -->
 <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
 
