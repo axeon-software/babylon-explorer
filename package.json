@@ -9,26 +9,6 @@
     "ship": "build --win -p always",
     "start" : "electron ."
   },
-  "build" : {
-    "appId" : "babylon.runtime.explorer",
-    "publish" : {
-      "provider": "github",
-      "token": "65e95268cbff01fe6e2bb0ed793171d08a73da83"
-    },
-    "win": {
-      "target": [
-        "nsis"
-      ]
-    },
-    "nsis": {
-      "oneClick": true,
-      "perMachine": true
-    },
-    "fileAssociations" : {
-      "ext" : ["gltf", "babylon"],
-      "description" : "3D Real Time scenes"
-    }
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

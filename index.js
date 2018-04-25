@@ -21,6 +21,7 @@ app.on('ready', function() {
 });
 
 app.on('open-file', function() {
+    alert("open File");
    console.log("yoooooooooooo", arguments);
 });
 
@@ -32,4 +33,15 @@ autoUpdater.on('update-downloaded', (info) => {
 // when receiving a quitAndInstall signal, quit and install the new version ;)
 ipcMain.on("quitAndInstall", (event, arg) => {
     autoUpdater.quitAndInstall();
+});
+
+// read the file and send data to the render process
+ipcMain.on('get-file-data', function(event) {
+    console.log("get-file-data");
+    var data = null
+    if (process.platform == 'win32' && process.argv.length >= 2) {
+        var openFilePath = process.argv[1]
+        data = openFilePath
+    }
+    event.returnValue = data
 });

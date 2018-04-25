@@ -14,7 +14,14 @@ Yo ?
         // changes the text of the button
         var container = document.getElementById('ready');
         container.innerHTML = "new version ready!";
-    })
+    });
+    var data = ipcRenderer.sendSync('get-file-data')
+    if (data ===  null) {
+        console.log("There is no file")
+    } else {
+        // Do something with the file.
+        console.log(data)
+    }
 </script>
 Version: <span id="version">v0.0.4</span>
 <!-- the button onClick sends a quitAndInstall message to the electron main process -->

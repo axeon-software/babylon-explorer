@@ -1,0 +1,9 @@
+appId: babylon.runtime.explorer
+publish:
+  provider: github
+  token: 0fe8a9b578defa7acfd0adae5f7ff2cd4e7937f3
+fileAssociations:
+  ext: ["gltf", "babylon"]
+  description: "3D Real Time scenes"
+nsis:
+  perMachine : true
