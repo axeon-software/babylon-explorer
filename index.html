@@ -2,10 +2,11 @@
 <html>
 
 <head>
-    <title>Electron AutoUpdater</title>
+    <title>BABYLON Explorer</title>
 </head>
 
 <body>
+This is the new version 0.0.2.
 <script>
     const ipcRenderer = require('electron').ipcRenderer;
     // wait for an updateReady message
@@ -15,7 +16,7 @@
         container.innerHTML = "new version ready!";
     })
 </script>
-Version: <span id="version">v0.0.1</span>
+Version: <span id="version">v0.0.2</span>
 <!-- the button onClick sends a quitAndInstall message to the electron main process -->
 <button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
 

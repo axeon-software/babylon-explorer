@@ -1,13 +1,14 @@
 {
   "name": "babylon-explorer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Babylon runtime (_r) explorer",
   "main": "index.js",
   "repository": "https://github.com/axeon-software/babylon-explorer",
   "scripts": {
     "build": "build --win",
-    "ship": "build --win -p always"
-  }
+    "ship": "build --win -p always",
+    "start" : "electron ."
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
